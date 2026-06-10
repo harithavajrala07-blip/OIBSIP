@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+body{
+    background:linear-gradient(to right,#0f172a,#1e293b);
+    color:white;
+}
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+.profile-pic{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #facc15;
+    box-shadow:0 0 30px rgba(250,204,21,0.5);
+    transition:0.4s;
+}
+.profile-pic:hover{
+    transform:scale(1.05);
+}
+header h1{
+    font-size:60px;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.typing-text{
+    font-size:30px;
+    font-weight:bold;
+}
+.typing-text span{
+    position:relative;
+}
+.typing-text span::before{
+    content:"Web Developer";
+    color:#facc15;
+    animation:words 8s infinite;
+}
+.typing-text span::after{
+    content:"";
+    position:absolute;
+    width:3px;
+    height:100%;
+    background:white;
+    right:-8px;
+    animation:blink 0.7s infinite;
+}
+@keyframes words{
+
+    0%,25%{
+        content:"Web Developer";
+        color:#facc15;
+    }
+
+    26%,50%{
+        content:"Frontend Developer";
+        color:#38bdf8;
+    }
+
+    51%,75%{
+        content:"Java Programmer";
+        color:#4ade80;
+    }
+
+    76%,100%{
+        content:"Python Developer";
+        color:#f472b6;
+    }
+}
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
+nav{
+    background:#111827;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#facc15;
+}
+section{
+    width:80%;
+    margin:40px auto;
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(255,255,255,0.1);
+}
+h2{
+    color:#facc15;
+    margin-bottom:20px;
+    font-size:35px;
+}
+#about p{
+    line-height:30px;
+    color:#cbd5e1;
+}
+.skill{
+    margin-bottom:20px;
+}
+.skill p{
+    margin-bottom:8px;
+}
+.bar{
+    background:#334155;
+    border-radius:20px;
+    overflow:hidden;
+}
+.progress{
+    height:25px;
+    line-height:25px;
+    text-align:right;
+    padding-right:10px;
+    color:white;
+    font-weight:bold;
+}
+.html{
+    width:90%;
+    background:#ff5722;
+}
+.css{
+    width:85%;
+    background:#2196f3;
+}
+.js{
+    width:80%;
+    background:#facc15;
+    color:black;
+}
+.java{
+    width:88%;
+    background:#22c55e;
+}
+#projects{
+    width:80%;
+    margin:40px auto;
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(255,255,255,0.1);
+}
+.project-card{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    background:#334155;
+    padding:20px;
+    border-radius:15px;
+    flex-wrap:wrap;
+}
+.project-card img{
+    width:300px;
+    border-radius:12px;
+    transition:0.4s;
+}
+.project-card img:hover{
+    transform:scale(1.03);
+}
+.project-content{
+    flex:1;
+}
+.project-content h3{
+    color:#facc15;
+    margin-bottom:15px;
+    font-size:28px;
+}
+.project-content p{
+    color:#cbd5e1;
+    line-height:30px;
+}
+.resume-text{
+    color:#cbd5e1;
+    margin-bottom:20px;
+    line-height:28px;
+}
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#facc15;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+#contact{
+    text-align:center;
+}
+.contact-heading{
+    margin-top:10px;
+    color:#cbd5e1;
+}
+.social-icons{
+    margin-top:20px;
+}
+.social-icons a{
+    margin:0 15px;
+    text-decoration:none;
+}
+.social-icons i{
+    font-size:45px;
+    transition:0.3s;
+}
+.fa-linkedin{
+    color:#0a66c2;
+}
+.fa-envelope{
+    color:#ea4335;
+}
+.social-icons i:hover{
+    transform:scale(1.2);
+}
+.contact-text{
+    margin-top:20px;
+    color:#cbd5e1;
+    line-height:30px;
+}
+.thanks-text{
+    margin-top:15px;
+    color:#facc15;
+    font-size:18px;
+    font-weight:bold;
+}
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    color:#94a3b8;
+}
